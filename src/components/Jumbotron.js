@@ -5,8 +5,8 @@ const Example = (props) => {
   return (
     <div>
       <Jumbotron>
-        <h1 className="display-3">Hello, world!</h1>
-        <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
+        <h1 className="display-3">Employee Directory</h1>
+        <p className="lead">Use Input Box to search for Employee by last name.</p>
         <hr className="my-2" />
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <p className="lead">
