@@ -1,12 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import Main from "./components/Main";
+import Wrapper from "./components/Wrapper";
+import Header from "./components/Header";
 import './App.css';
-import Jumbotron from './components/Jumbotron';
 
 function App() {
   return (
     <div className="App">
-      <Jumbotron></Jumbotron>
+      <Wrapper>
+        <Header />
+        <Main />
+     </Wrapper>
     </div>
   );
 }
