@@ -1,6 +1,7 @@
 import React from "react";
 import DataBody from "./DataBody";
 import "../styles/DataTable.css";
+//uses the databody information to map object and interate its elements in insertion order, loop returns an array of key value for each interation
 
 function DataTable({ headings, users, handleSort }) {
     return (

@@ -11,7 +11,7 @@ function DataBody({ users }) {
     const formattedDate = [month, day, year].join("-");
     return formattedDate;
   }
-
+//used to group the body contents of the employee directory in a formatted way
   return (
     <tbody>
       {users[0] !== undefined && users[0].name !== undefined ? (

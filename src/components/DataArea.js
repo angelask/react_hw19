@@ -32,10 +32,10 @@ export default class DataArea extends Component {
           order: "descend"
         })
       }
-
+     //functions to allow user to filter data on specified criterion
       const compareFnc = (a, b) => {
         if (this.state.order === "ascend") {
-          // account for missing values
+          // this accounts for missing values
           if (a[heading] === undefined) {
             return 1;
           } else if (b[heading] === undefined) {
@@ -48,7 +48,7 @@ export default class DataArea extends Component {
             return a[heading] - b[heading];
           }
         } else {
-          // account for missing values
+          // this accounts for missing values
           if (a[heading] === undefined) {
             return 1;
           } else if (b[heading] === undefined) {
@@ -71,7 +71,7 @@ export default class DataArea extends Component {
       console.log(event.target.value);
       const filter = event.target.value;
       const filteredList = this.state.users.filter(item => {
-        // merge data together, then see if user input is anywhere inside
+        // this will join data together, then see if user input is anywhere inside. it will change all inputs to lower case
         let values = Object.values(item)
           .join("")
           .toLowerCase();
@@ -79,7 +79,7 @@ export default class DataArea extends Component {
       });
       this.setState({ filteredUsers: filteredList });
     }
-
+  //impliments a semantic ui dropdown list using hooks, this will fetch results for user then enable a new search
     componentDidMount() {
       API.getUsers().then(results => {
         this.setState({

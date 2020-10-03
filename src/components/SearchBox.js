@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/SearchBox.css";
 
-// Using the datalist element we can create autofill suggestions based on the props.breeds array
+// Using the input box to create a form for the user to search data
 function SearchBox({ handleSearchChange }) {
   return (
     <div className="searchbox">
